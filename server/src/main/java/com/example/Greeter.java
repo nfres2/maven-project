@@ -1,3 +1,6 @@
+/**
+ * Greeter pacckage.
+ */
 package com.example;
 
 /**
