@@ -4,7 +4,7 @@ pipeline {
     parameters {
          string(name: 'tomcat_dev', defaultValue: '18.191.97.37', description: 'Staging Server')
          string(name: 'tomcat_prod', defaultValue: '18.223.1.57', description: 'Production Server')
-    }18.191.97.37
+    }
 
     triggers {
          pollSCM('* * * * *')
