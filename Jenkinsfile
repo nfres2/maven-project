@@ -12,15 +12,13 @@ stages{
             }
         }
 
-
-        stage ('Deployments'){
-                stage ("Deploy to docker tomcat"){
-                    steps{
-                        sh "sudo usermod -a -G docker $USER"
-                        sh "docker build . -t tomcatwebapp:${env.BUILD_ID}"
-                    }
-                }
-
+        stage ("Deploy to docker tomcat"){
+            steps{
+                sh "sudo usermod -a -G docker $USER"
+                sh "docker build . -t tomcatwebapp:${env.BUILD_ID}"
+            }
         }
+
+
     }
 }
