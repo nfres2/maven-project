@@ -39,7 +39,7 @@ stages{
 
                 stage ("Deploy to docker tomcat"){
                     steps{
-                        sh
+                        sh "docker build . -t tomcatwebapp:${env.BUILD_ID}"
                     }
                 }
             }
