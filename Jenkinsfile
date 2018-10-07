@@ -21,8 +21,9 @@ stages{
                     archiveArtifacts artifacts: '**/target/*.war'
                 }
             }
+      */
         }
-       */
+
 
         stage ('Deployments'){
             parallel{
